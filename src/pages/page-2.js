@@ -14,6 +14,7 @@ const SecondPage = () => (
       <Row>
         <Col lg={6}>
           <Form name="contact v1" mehtod="post" data-netlify="true" onSubmit="submit">
+          <input type="hidden" name="form-name" value="contact v1"/>
           <Form.Group controlId="formBasicName">
             <Form.Label>Name</Form.Label>
             <Form.Control required type="text" placeholder="Name"/>
