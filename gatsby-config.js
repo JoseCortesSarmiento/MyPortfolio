@@ -1,10 +1,31 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `José Cortés Portfolio`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-airtable`,
+      options: {
+        apiKey: `keyjjxEkhawsnwxkP`,
+        tables: [
+          {
+            baseId: `app0jC1uKxf1jcMvg`,
+            tableName: `Sandwiches`
+          },
+          {
+            baseId: `app0jC1uKxf1jcMvg`,
+            tableName: `Images`
+          },
+          // We can add other bases/tables here, too!
+          //{
+            //baseId: `AIRTABLE_BASE_ID`,
+            //tableName: `Sides`
+          //}
+        ]
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
