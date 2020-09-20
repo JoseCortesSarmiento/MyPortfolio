@@ -13,23 +13,23 @@ const SecondPage = () => (
     <Container>
       <Row>
         <Col lg={6}>
-          <Form name="contact v1" mehtod="post" data-netlify="true" onSubmit="submit">
-          <input type="hidden" name="form-name" value="contact v1"/>
+          <Form name="contact v2" mehtod="post" data-netlify="true" onSubmit="submit">
+          <input type="hidden" name="form-name" value="contact v2"/>
           <Form.Group controlId="formBasicName">
             <Form.Label>Name</Form.Label>
-            <Form.Control required type="text" placeholder="Name"/>
+            <Form.Control required type="text" placeholder="Name" name="name"/>
           </Form.Group>
           <Form.Group controlId="formBasicPhone">
             <Form.Label>Phone Number(optional)</Form.Label>
-            <Form.Control type="text" placeholder="Phone"/>
+            <Form.Control type="text" placeholder="Phone" name="phone"/>
           </Form.Group>
           <Form.Group controlId="formBasicEmail">
             <Form.Label>Email</Form.Label>
-            <Form.Control required type="email" placeholder="Email"/>
+            <Form.Control required type="email" placeholder="Email" name="email"/>
           </Form.Group>
           <Form.Group controlId="formBasicText">
             <Form.Label>How can I help you?</Form.Label>
-            <Form.Control required as="textarea" rows="3" placeholder="Text..."/>
+            <Form.Control required as="textarea" rows="3" placeholder="Text..." name="text"/>
           </Form.Group>
           <Button type="submit">Submit</Button>
           </Form>
