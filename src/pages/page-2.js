@@ -13,7 +13,7 @@ const SecondPage = () => (
     <Container>
       <Row>
         <Col lg={6}>
-          <Form name="contact v2" mehtod="post" data-netlify="true" onSubmit="submit">
+          <Form name="contact v2" method="post" data-netlify="true" onSubmit="submit">
           <input type="hidden" name="form-name" value="contact v2"/>
           <Form.Group controlId="formBasicName">
             <Form.Label>Name</Form.Label>
