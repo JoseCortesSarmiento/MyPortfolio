@@ -18,6 +18,10 @@ module.exports = {
             baseId: `app0jC1uKxf1jcMvg`,
             tableName: `Images`
           },
+          {
+            baseId: `app0jC1uKxf1jcMvg`,
+            tableName: `CarouselCont`
+          },
           // We can add other bases/tables here, too!
           //{
             //baseId: `AIRTABLE_BASE_ID`,
